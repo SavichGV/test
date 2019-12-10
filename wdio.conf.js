@@ -193,13 +193,13 @@ exports.config = {
         timeout: 20000,     // <number> timeout for step definitions
         ignoreUndefinedDefinitions: false, // <boolean> Enable this config to treat undefined definitions as warnings.
     },
-    //before: function before() {
+     before: function before() {
         /**
          * Setup the Chai assertion framework
          */
-      //  const chai = require('chai');
-      //  global.expect = chai.expect;
-    //},
+       const chai = require('chai');
+       global.expect = chai.expect;
+    },
     //
     // =====
     // Hooks

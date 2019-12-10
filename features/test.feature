@@ -2,11 +2,11 @@ Feature: Sign in page functionality
 
 @smoke
 Scenario Outline: Correct credentials submit DM and TM
-  Given I am on the "Sign in" page
-  When type to input with name "Email" text "<c_mail>"
+  Given Open "https://staging-family.godeltech.com/division" url
+  When type to input with name "Username or email" text "<c_mail>"
   And type to input with name "Password" text "<c_password>"
   And click on the "Log in" button
-  Then I am on the "Division" page
+  Then I have "https://staging-family.godeltech.com/division" url
 
   Examples:
       | c_mail       | c_password |

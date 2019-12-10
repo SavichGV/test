@@ -1,6 +1,6 @@
 // import { defineSupportCode } from 'cucumber';
 const {defineSupportCode} = require('cucumber');
-import getUrl from '../services/helpers/getUrl';
+//import getUrl from '../services/helpers/getUrl';
 
 defineSupportCode(({ Given }) => {
 

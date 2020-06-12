@@ -8,8 +8,9 @@ defineSupportCode(({ When }) => {
     input.waitForExist (2000);
   //  browser.waitForExist('input=' + text, 2000)
 
-  const inputb = $('#username')
-    inputb.click({ x: 30 })
+  const inputb = $('#kc-login')
+    inputb.click()
+    browser.pause(5000);
   //  browser.click('input=' + text)
   })
 });

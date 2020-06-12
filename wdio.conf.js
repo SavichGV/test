@@ -88,7 +88,7 @@ exports.config = {
     sync: true,
     //
     // Level of logging verbosity: trace | debug | info | warn | error | silent
-    logLevel: 'error',
+    logLevel: 'debug',
     //
     //
     // Enables colors for log output.
@@ -200,6 +200,16 @@ exports.config = {
        const chai = require('chai');
        global.expect = chai.expect;
     },
+    //
+    /*beforeScenario: function (scenario) {
+      browser.deleteAllCookies();
+      browser.refresh();
+   },*/
+  /*  before: function before() {
+      browser.deleteAllCookies();
+      browser.refresh();
+      browser.pause(10000);
+  },
     //
     // =====
     // Hooks
